@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['quiet-plateau-78397.herokuapp.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'newroute.apps.NewrouteConfig',
     'about.apps.AboutConfig',
     'blog.apps.BlogConfig',
     'django.contrib.admin',
