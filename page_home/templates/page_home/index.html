@@ -1,3 +1,3 @@
 {%extends 'base.html'%} {%block 'content'%}
 <h4>Você está na home page do site.</h4>
-Seu nome é {{my_name}} e seu IP é {{ip.ip_address}} {%endblock%}
+Seu nome é {{my_name|upper}} e seu IP é {{ip.ip_address}} {%endblock%} {%csrf_token%}
