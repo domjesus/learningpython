@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-yg-6hjitw*333qqmkq$flm99f41(j$iz5qp6cq@dy94qpcw0-&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['quiet-plateau-78397.herokuapp.com']
+ALLOWED_HOSTS = ['quiet-plateau-78397.herokuapp.com','localhost']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'page_home.apps.PageHomeConfig',
     'newroute.apps.NewrouteConfig',
     'about.apps.AboutConfig',
     'blog.apps.BlogConfig',

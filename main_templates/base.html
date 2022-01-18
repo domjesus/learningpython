@@ -1,20 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>{%block 'title'%} {%endblock%}</title>
     <style>
-        body {
+      body {
         font-size: 40px;
-        background:red;
-        color:white;
-        }
+        background: cornflowerblue;
+        color: black;
+        width: 95%;
+        margin-bottom: 120px;
+      }
+      .footer {
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-flow: row;
+        align-self: center;
+        background-color: cornsilk;
+        width: 99%;
+        margin-bottom: 15px;
+        border-radius: 6px;
+        /* margin-top: 120px; */
+      }
+      .footer > a {
+        color: blueviolet;
+        padding: 10px;
+        text-decoration: none;
+        margin: auto;
+      }
     </style>
-</head>
-<body>
-<h3>Esta é uma página de base</h3>
+  </head>
+  <body>
+    <h5>Esta é uma página de base</h5>
 
-{%block 'content' %}{%endblock%}
-
-</body>
+    {%block 'content' %}{%endblock%} {%block 'footer' %}{%endblock%}
+    <div class="footer">
+      <a href="/">Home</a>
+      <a href="/new/">Page</a>
+      <a href="/blog/">Blog</a>
+      <a href="/about/">About</a>
+    </div>
+  </body>
 </html>
